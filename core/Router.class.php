@@ -27,7 +27,7 @@ class Router
         return static::$instance;
     }
 
-    protected function __construct()
+    private function __construct()
     {
 
     }
@@ -68,8 +68,8 @@ class Router
 
     private function _getUserRoutes()
     {
-        if (file_exists(APP_PATH . 'Config/routes.php')) {
-            include(APP_PATH . 'Config/routes.php');
+        if (file_exists(APP_PATH . 'routes.php')) {
+            include(APP_PATH . 'routes.php');
         }
     }
 

@@ -1,4 +1,5 @@
 <?php
+use Core\Fm\Config;
 
 
 /**
@@ -50,7 +51,11 @@ class Fm
      */
     public  function run(){
 
+        # Загрузить конфиги
+        Config::loadConfig();
+
         # Запуск маршуртизатора
         Router::getInstance()->parse();
+
     }
 }

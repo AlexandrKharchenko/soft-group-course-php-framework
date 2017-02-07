@@ -9,6 +9,7 @@
 
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,20 +40,20 @@
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="<?=getRoueUrl('auth.login');?>">Вход</a></li>
-                <li><a href="<?=getRoueUrl('auth.register');?>">Регистраци</a></li>
+                <li><a href="<?=getRoueUrl('auth.login');?>"><i class="fa fa-sign-in"></i> Вход</a></li>
+                <li><a href="<?=getRoueUrl('auth.register');?>"><i class="fa fa-user-plus" aria-hidden="true"></i> Регистраци</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
 <div class="container">
-    <? print_r('<pre>'.(__FILE__).':'.(__LINE__).'<hr />'.print_r( $_REQUEST  ,true).'</pre>'); ?>
+
     <?=$content; ?>
 </div>
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

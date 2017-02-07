@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$_SESSION['Allo'] = "Privet";
+
 require_once 'config/config.php';
 require_once 'autoload.php';
 require_once 'Router.class.php';

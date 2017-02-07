@@ -1,0 +1,14 @@
+{
+    "name": "alexandr-kharchenko/sg-course-fm",
+    "description": "Simple PHP micro-framework",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexandr Kharchenko",
+            "email": "alexsot1545@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
